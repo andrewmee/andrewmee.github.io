@@ -1,0 +1,14 @@
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+sass:
+  sass_dir: resources/styles
+  style: :compressed
+
+# Post permalink format
+permalink: /posts/:title/

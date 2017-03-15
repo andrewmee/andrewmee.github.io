@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<header class="container">
+    <a href="/"><img src="/resources/images/logo-black-trans.svg" class="logo" alt="Andrew Mee"></a>
+</header>
+
+<article class="container post">
+    <header>
+        <span class="post__topic">{{page.topic}}</span>
+        <h1>{{ page.title }}</h1>
+        <span class="post__date">
+            Article published
+            <time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ page.date | date: '%d %B %Y' }}</time>
+        </span>
+
+        {% if page.crossPost %}
+            <a href="{{ page.crossPost.url }}">Originally posted on {{ page.crossPost.site }}</a>
+        {% endif %}
+    </header>
+
+    <div class="content">
+        {{ content }}
+    </div>
+</article>
+
+<footer class="container">
+    <img src="/resources/images/logo-black-trans.svg" class="logo" alt="">
+    <h2>Andrew Mee</h2>
+    <a href="/">Front-end developer</a>
+</footer>

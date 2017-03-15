@@ -1,0 +1,42 @@
+---
+title: "Andrew Mee: Front-end web developer"
+description: 
+permalink: /
+---
+
+<main class="container">
+    <img src="/resources/images/logo-black-trans.svg" class="logo" alt="">
+    
+    <h1>Andrew Mee</h1>
+
+    <div class="content">
+        <p>
+            Hello, I'm Andrew and I am a front-end web developer with 13 years experience.
+            What does that mean? Well put simply, it means I have a great passion for building beautiful, efficient and elegant websites. Websites that draw you in and engage you; websites that do nifty things!
+        </p>
+        <p>
+            <a href="http://www.linkedin.com/in/andrewmee">View my CV on LinkedIn</a> or
+            <a href="https://github.com/andrewmee">check me out on GitHub</a>
+        </p>
+    </div>
+
+    <section class="content">
+        <h2>Availability</h2>
+        <p>I am currently looking for full-time contract work in London.</p>
+        <p>
+            <a href="http://mailhide.recaptcha.net/d?k=01xdQW1iH_QnoljSY2I3GMFA==&amp;c=tVVgbsr_HzLqyv2KVdwdAzRRhw_nBSYf_y4U6_RxG9k=" rel="nofollow">Get in touch</a> if you'd like to know more.
+        </p>
+    </section>
+
+    <section class="content">
+        <h2>Recent activity</h2>
+        <ol class="clean-list">
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date | date: '%d %B %Y' }}</time>
+                </li>
+            {% endfor %}
+        </ol>
+    </section>
+</main>
