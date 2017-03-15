@@ -2,6 +2,7 @@
 ---
 
 @import "vendor/normalize";
+@import "vendor/pygments-monokai";
 
 $breakpoint-large: "75em";
 $breakpoint-medium: "50em";
@@ -129,7 +130,7 @@ footer {
 /* Typography */
 
 ::selection {
-    background: rgba(255, 135, 0, 0.5);
+    background: #ffd4a3;
 }
 
 h1,
@@ -189,28 +190,40 @@ a {
     margin: 0 0 0 -140px;
     padding: 0 0 0 140px;
     position: relative;
+
+
+    ::selection {
+        background: #fff;
+    }
 }
 
 .highlight pre code {
-    background: #eee;
     display: block;
     overflow: auto;
     padding: 20px;
 }
 
 .highlight code::before {
-    background: #ccc;
+    background: #ff00a1;
     color: #fff;
     content: attr(data-lang);
     display: block;
     font-weight: bold;
     text-align: right;
+    letter-spacing: -0.05em;
     margin-left: -100px;
     margin-top: -20px;
     padding: 5px;
     position: absolute;
     height: 50px;
     width: 50px;
+}
+
+.highlighter-rouge {
+    background: #eee;
+    border-radius: 2px;
+    font-size: 0.9em;
+    padding: 0.2em 0.6em;
 }
 
 /* Set code block intro colours based on type */
