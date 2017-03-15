@@ -11,7 +11,7 @@ crossPost:
   url: http://cruft.io/posts/automated-accessibility-testing-node-travis-ci-pa11y/
 ---
 
-Too often accessibility testing is left as a manual process, and so inevitably it is done only sporadically (or worse; never).  To help address this shortfall, [Springer Nature developed and released Pa11y](/posts/accessibility-testing-with-pa11y/) which uses HTML CodeSniffer and PhantomJS to raise common accessibility issues in an automated manner.
+Too often accessibility testing is left as a manual process, and so inevitably it is done only sporadically (or worse; never).  To help address this shortfall, [Springer Nature developed and released Pa11y](http://cruft.io/posts/accessibility-testing-with-pa11y/) which uses HTML CodeSniffer and PhantomJS to raise common accessibility issues in an automated manner.
 
 Since then Pa11y has continued to evolve to suit the needs of the developer community.  This week with the first stable release of the brand new [Pa11y CI], it's easier than ever to leverage Pa11y and make accessibility a core part of your development and deployment processes.
 
