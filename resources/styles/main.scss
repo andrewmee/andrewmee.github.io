@@ -113,6 +113,17 @@ body {
     }
 }
 
+.theme--negative {
+    .post__topic {
+        background: #000;
+        color: white;
+        display: block;
+        padding-top: 1ex;
+        position: static;
+        text-indent: -0.05em;
+    }
+}
+
 footer {
     .logo {
         float: left;
