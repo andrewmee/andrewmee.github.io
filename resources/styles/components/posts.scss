@@ -1,0 +1,54 @@
+.post__date {
+    background: #00a7ff;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5ex 1em;
+}
+
+.post__topic {
+    font-size: 35vw;
+    left: 0;
+    letter-spacing: -0.1em;
+    line-height: 0.65;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    word-break: break-all;
+    word-break: break-word;
+    z-index: -1;
+
+    @media screen and (min-width: $breakpoint-small) {
+        font-size: 25vw;
+        text-indent: 0.5em;
+    }
+}
+
+.theme--soft {
+    .post__topic {
+        color: rgba(255, 0, 255, 0.1);
+        text-shadow: 0.08em 0.0ex 0 #caf7ff;
+    }
+}
+
+.theme--shock {
+    .post__topic {
+        background: orange;
+        color: #fff;
+        font-size: 30vmin;
+        font-weight: 100;
+        text-align: right;
+        min-height: 160px;
+        width: 100%;
+    }
+}
+
+.theme--negative {
+    .post__topic {
+        background: #000;
+        color: white;
+        display: block;
+        padding-top: 1ex;
+        position: static;
+        text-indent: -0.05em;
+    }
+}

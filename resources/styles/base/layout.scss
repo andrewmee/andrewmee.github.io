@@ -1,0 +1,37 @@
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.gutters img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: $breakpoint-small) {
+    .gutters {
+        margin-left: 15%;
+    }
+
+    .gutter-left {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .gutters {
+        margin-right: 15%;
+    }
+
+    .gutter-right {
+        margin-right: 15%;
+    }
+}
+
+.content {
+    img {
+        border: 5px solid #ccc;
+        box-sizing: border-box;
+    }
+}
