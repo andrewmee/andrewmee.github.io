@@ -29,9 +29,7 @@
     }
 }
 
-.content {
-    img {
-        border: 5px solid #ccc;
-        box-sizing: border-box;
-    }
+.in-front {
+    position: relative;
+    z-index: 1;
 }

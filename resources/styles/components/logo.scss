@@ -36,3 +36,14 @@ a:hover .logo__box {
     margin-left: -80px;
     width: 60px;
 }
+
+.logo--impact {
+    display: inline;
+    width: 10vw;
+
+    @media screen and (min-width: $breakpoint-small) {
+        transform: rotate(-25deg);
+        transform-origin: 0 100%;
+        width: 25vw;
+    }
+}

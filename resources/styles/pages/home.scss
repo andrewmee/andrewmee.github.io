@@ -1,0 +1,30 @@
+.colour-block {
+    background: #41c1f7;
+    color: #fff;
+    position: relative;
+
+    .slider {
+        /*background: linear-gradient(to bottom, #41f7c0 0%,#41d2f7 100%) no-repeat;*/
+        background: linear-gradient(to bottom, #f7417c 0%, #f78d41 100%) no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transform: rotate(180deg);
+        width: 100%;
+    }
+
+    a {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: inherit;
+        display: inline-block;
+        padding: 0 0.5em;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+}
