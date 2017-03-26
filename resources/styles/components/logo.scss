@@ -13,28 +13,19 @@ a:hover .logo__box {
     fill: yellow;
 }
 
-.logo--hanging {
+header .logo {
     height: 40px;
     width: 40px;
 
     @media screen and (min-width: $breakpoint-small) {
-        margin-bottom: 0px;
-        margin-left: -80px;
         height: 60px;
         width: 60px;
     }
 
     @media screen and (min-width: $breakpoint-medium) {
-        margin-left: -120px;
         height: 100px;
         width: 100px;
     }
-}
-
-.logo--hanging-small {
-    float: left;
-    margin-left: -80px;
-    width: 60px;
 }
 
 .logo--impact {
