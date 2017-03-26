@@ -53,6 +53,22 @@ h3 {
     letter-spacing: -0.02em;
 }
 
+.pull-left {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: $breakpoint-small) {
+    .pull-left {
+        font-size: 1.2rem;
+    }
+    
+    .pull-left__title {
+        font-size: inherit;
+        line-height: 1.76;
+        margin: 0;
+    }
+}
+
 .clean-list {
     list-style: none;
     padding: 0;

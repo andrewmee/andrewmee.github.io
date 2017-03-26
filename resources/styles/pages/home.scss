@@ -28,3 +28,20 @@
     }
 
 }
+
+.recommendation {
+    font-size: 1.2rem;
+    margin: 0 0 2em;
+
+    p {
+        color: #777;
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    cite {
+        display: block;
+        font-style: normal;
+        text-align: right;
+    }
+}
