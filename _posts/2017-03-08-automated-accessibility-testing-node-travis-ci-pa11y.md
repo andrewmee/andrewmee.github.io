@@ -11,6 +11,7 @@ crossPost:
   url: http://cruft.io/posts/automated-accessibility-testing-node-travis-ci-pa11y/
 ---
 
+<div class="gutters" markdown="1">
 Too often accessibility testing is left as a manual process, and so inevitably it is done only sporadically (or worse; never).  To help address this shortfall, [Springer Nature developed and released Pa11y](http://cruft.io/posts/accessibility-testing-with-pa11y/) which uses HTML CodeSniffer and PhantomJS to raise common accessibility issues in an automated manner.
 
 Since then Pa11y has continued to evolve to suit the needs of the developer community.  This week with the first stable release of the brand new [Pa11y CI], it's easier than ever to leverage Pa11y and make accessibility a core part of your development and deployment processes.
@@ -128,6 +129,7 @@ script:
 You can then see how I use this `$MODE` variable to either run just the linting command, just the pa11y tests, or the other tests instead - all in parallel!
 
 ![Screenshot of Travis showing 4 parallel build jobs][screenshot-builds]
+</div>
 
 [Pa11y CI]: https://github.com/pa11y/ci
 [screenshot-builds]: /resources/images/automated-accessibility-testing-node-travis-ci-pa11y/builds.png

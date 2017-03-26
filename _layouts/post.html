@@ -17,7 +17,7 @@ layout: default
         <span class="post__topic">{{page.topic}}</span>
         <h1>{{ page.title }}</h1>
         <span class="post__date">
-            Article published
+            
             <time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ page.date | date: '%d %B %Y' }}</time>
         </span>
 
@@ -26,9 +26,7 @@ layout: default
         {% endif %}
     </header>
 
-    <div class="gutters">
-        {{ content }}
-    </div>
+    {{ content }}
 </article>
 
 <footer class="container">
