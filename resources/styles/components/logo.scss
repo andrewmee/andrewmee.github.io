@@ -3,6 +3,10 @@
 
 .logo__box {
     fill: #222;
+
+    .theme--portfolio & {
+        fill: #fff;
+    }
 }
 
 .logo__text {

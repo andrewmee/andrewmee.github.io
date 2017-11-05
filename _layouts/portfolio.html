@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<header class="container site-header">
+    <div class="gutters">
+        <div class="pull-left">
+            <a href="/">
+                {% include logo.svg classes="" %}
+            </a>
+        </div>
+    </div>
+</header>
+
+<article class="container">
+    <img class="portfolio-hero" src="/resources/images/dublin-doodle/irish-times.jpg">
+    <header class="portfolio-header">
+        {{page.topic}}
+        <h1>{{ page.title }}</h1>
+
+        <dl class="portfolio-header__info">
+            <dt>Client{% if page.clients.size > 0 %}s{% endif %}</dt>
+            {% for client in page.clients %}
+                <dd>
+                    {% if client.url %}
+                        <a href="{{ client.url }}">
+                            {{ client.name }}
+                        </a>
+                    {% else %}
+                        {{ client.name }}
+                    {% endif %}
+                </dd>
+            {% endfor %}
+
+            <dt>Type</dt>
+            {% for type in page.type %}
+                <dd>{{ type }}</dd>
+            {% endfor %}
+
+            <dt>Sector</dt>
+            {% for sector in page.sector %}
+                <dd>{{ sector }}</dd>
+            {% endfor %}
+
+            <dt>Date</dt>
+            <dd><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ page.date | date: '%d %B %Y' }}</time></dd>
+        </dl>
+    </header>
+
+    {{ content }}
+</article>
+
+<footer class="container">
+    <div class="gutters">
+        <span class="pull-left"><img src="/resources/images/logo-black-trans.svg" class="logo" alt=""></span>
+        <h2>Andrew Mee</h2>
+        <a href="/">Front-end developer</a>
+    </div>
+</footer>

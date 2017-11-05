@@ -1,0 +1,50 @@
+.portfolio-header {
+    background: #fff;
+    margin-bottom: 4em;
+    margin-top: 35vw;
+
+    @media screen and (min-width: $breakpoint-small) {
+        margin-left: calc(20% - 20px);
+        margin-top: 15vw;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        margin-left: auto;
+        margin-right: 0;
+        padding: 40px;
+        width: 50%;
+    }
+
+    h1 {
+        margin-top: -0.25ex;
+    }
+}
+
+.portfolio-header__info {
+    dt {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1;
+        margin-top: 1em;
+    }
+
+    dd {
+        display: inline;
+        margin-left: 0;
+
+        & + dd:before {
+            content: "/ ";
+        }
+    }
+}
+
+.portfolio-hero {
+    background: #D6D0D0;
+    left: 0;
+    min-height: 50vw;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}

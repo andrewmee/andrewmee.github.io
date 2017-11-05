@@ -6,10 +6,15 @@ $breakpoint-medium: "50em";
 $breakpoint-small: "40em";
 
 @import "vendor/normalize";
+
 @import "base/layout";
 @import "base/typography";
+
 @import "components/logo";
 @import "components/posts";
+@import "components/portfolio-header";
 @import "components/code-highlighting";
+
 @import "vendor/pygments-monokai";
+
 @import "pages/home";

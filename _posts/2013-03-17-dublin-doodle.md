@@ -3,8 +3,20 @@ title: Dublin Doodle
 description: 
 date: 2013-03-17 00:00
 topic: Case study
-layout: post
-theme: shock
+layout: portfolio
+theme: portfolio
+clients:
+    - name: Tourism Ireland
+    - name: Hugo&Cat
+      url: http://www.hugoandcat.com
+type:
+    - Social media campaign
+    - Facebook App
+    - Interactive installation
+sector:
+    - Tourism
+    - Culture
+    - Events
 ---
 
 <div class="gutters" markdown="1">
