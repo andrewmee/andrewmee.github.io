@@ -1,12 +1,13 @@
 .portfolio-header {
     background: #fff;
+    box-sizing: border-box;
     margin-bottom: 4em;
     margin-top: 35vw;
 
     @media screen and (min-width: $breakpoint-small) {
-        margin-left: calc(20% - 20px);
+        margin-left: calc(20% - #{$gutter});
         margin-top: 15vw;
-        padding: 20px;
+        padding: $gutter;
     }
 
     @media screen and (min-width: $breakpoint-medium) {
@@ -14,10 +15,6 @@
         margin-right: 0;
         padding: 40px;
         width: 50%;
-    }
-
-    h1 {
-        margin-top: -0.25ex;
     }
 }
 
