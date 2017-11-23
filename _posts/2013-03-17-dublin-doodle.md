@@ -5,6 +5,7 @@ date: 2013-03-17 00:00
 topic: Case study
 layout: portfolio
 theme: portfolio
+hero: /resources/images/dublin-doodle/irish-times.jpg
 clients:
     - name: Tourism Ireland
     - name: Hugo&Cat
