@@ -53,6 +53,15 @@ h3 {
     letter-spacing: -0.02em;
 }
 
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 .pull-left {
     margin-bottom: 1em;
 }
@@ -76,6 +85,7 @@ h3 {
 
 a {
     color: #ff00a1;
+    text-decoration-skip: ink;
 
     &:hover,
     &:focus {

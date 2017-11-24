@@ -14,11 +14,20 @@
         margin-left: 20%;
     }
 
+    .bleed-left,
     .pull-left {
-        box-sizing: border-box;
         float: left;
         margin-left: -25%;
         padding-right: $gutter;
+    }
+    
+    .bleed-left {
+        margin-bottom: $gutter;
+        max-width: 80%;
+    }
+
+    .pull-left {
+        box-sizing: border-box;
         text-align: right;
         width: 25%;
     }
@@ -34,8 +43,16 @@
     .gutters {
         margin-right: 20%;
 
+        .bleed-right {
+            margin-right: -33.33%;
+        }
+
+        .bleed-left,
         .pull-left {
             margin-left: -33.333%;
+        }
+
+        .pull-left {
             width: 33.333%;
         }
     }
