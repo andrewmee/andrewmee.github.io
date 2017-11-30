@@ -4,8 +4,12 @@
     padding: $gutter;
 }
 
-.gutters img {
+img {
     max-width: 100%;
+}
+
+.section {
+    margin: 4em 0;
 }
 
 @media screen and (min-width: $breakpoint-small) {
@@ -24,6 +28,10 @@
     .bleed-left {
         margin-bottom: $gutter;
         max-width: 80%;
+    }
+    
+    img.bleed-left {
+        max-width: 125%;
     }
 
     .pull-left {
@@ -50,6 +58,11 @@
         .bleed-left,
         .pull-left {
             margin-left: -33.333%;
+        }
+
+        .bleed-left,
+        .bleed-right {
+            max-width: 133.33%;
         }
 
         .pull-left {
