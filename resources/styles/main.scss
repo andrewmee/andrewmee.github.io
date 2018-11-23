@@ -20,3 +20,81 @@ $gutter: 20px;
 @import "vendor/pygments-monokai";
 
 @import "pages/home";
+
+.intro {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  &__content {
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+    padding-left: 300px;
+  }
+}
+
+.logo {
+  animation: font-twitch 5s 2s infinite;
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  right: calc(50% + 250px);
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: calc(50% - 80px);
+  width: 100px;
+  word-break: break-all;
+
+  span {
+    line-height: 33.333px;
+    width: 33.333%;
+  }
+}
+
+@keyframes font-twitch {
+  0% {
+    font-family: inherit;
+    // background: red;
+  }
+  74% {
+    font-family: inherit;
+    font-style: normal;
+    // background: red;
+  }
+  75% {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    // background: yellow;
+  }
+  80% {
+    font-family: Courier, monospace;
+    font-style: normal;
+    // background: green;
+  }
+  // 84.9% {
+  //   font-size: 1em;
+  // }
+  85% {
+    font-family: cursive;
+    // font-size: 2em;
+  }
+  // 89.9% {
+  //   font-size: 1em;
+  // }
+  90% {
+    font-family: webdings;
+  }
+  95% {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  100% {
+    font-family: inherit;
+  }
+}
