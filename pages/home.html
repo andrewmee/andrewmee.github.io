@@ -5,56 +5,51 @@ permalink: /
 ---
 
 <main role="main">
-    <section class="intro">
-        <div class="logo">
-            <span>A</span><span>n</span><span>d</span><span>r</span><span>e</span><span>w</span>
-            <span>M</span><span>e</span><span>e</span>
-        </div>
-        <div class="intro__content">
-            <p>
-                Hello, I'm Andrew and I am a front-end web developer with 13 years experience.
-                What does that mean? Well put simply, it means I have a great passion for building beautiful, efficient and elegant websites. Websites that draw you in and engage you; websites that do nifty things!
-            </p>
-            <p>
-                <a href="http://www.linkedin.com/in/andrewmee">View my CV on LinkedIn</a> or
-                <a href="https://github.com/andrewmee">check me out on GitHub</a>
-            </p>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="gutters">
-            <h2>Recent activity</h2>
-            <ol class="clean-list">
-                {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                        <time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date | date: '%d %B %Y' }}</time>
-                    </li>
-                {% endfor %}
-            </ol>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="gutters">
-            <h2 class="hide">Availability</h2>
-            <p>
-                <strong>I am currently available for full-time contract work in London.</strong><br>
-                <a href="http://www.linkedin.com/in/andrewmee" rel="nofollow">Get in touch</a> if you'd like to know more.
-            </p>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="gutter-left">
-            <div class="pull-left">
-                <h3 class="pull-left__title">Nice things people have said</h3>
-                <a href="https://www.linkedin.com/in/andrewmee">View more</a>
+    <section class="panel">
+        <div class="panel__container">
+            <div class="logo">
+                <span>A</span><span>n</span><span>d</span><span>r</span><span>e</span><span>w</span>
+                <span>M</span><span>e</span><span>e</span>
             </div>
+            <div class="panel__content">
+                <p>
+                    Hello, I'm Andrew and I am a front-end web developer with 13 years experience.
+                    What does that mean? Well put simply, it means I have a great passion for building beautiful, efficient and elegant websites. Websites that draw you in and engage you; websites that do nifty things!
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <div class="column column--two">
-                <blockquote class="column__item recommendation">
+    <section class="panel">
+        <div class="panel__container">
+            <div class="panel__content">
+                <h2>Recent activity</h2>
+                <ol class="clean-list">
+                    {% for post in site.posts %}
+                        <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            <time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date | date: '%d %B %Y' }}</time>
+                        </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel__container">
+            <div class="panel__content">
+                <h2>Work with me</h2>
+                <p>
+                    <strong>I am currently available for full-time contract work in London.</strong><br>
+                    <a href="http://www.linkedin.com/in/andrewmee" rel="nofollow">Get in touch</a> if you'd like to know more.
+                </p>
+                <p>
+                    <a href="http://www.linkedin.com/in/andrewmee">View my CV on LinkedIn</a> or
+                    <a href="https://github.com/andrewmee">check me out on GitHub</a>
+                </p>
+
+                <blockquote class="recommendation">
                     <p>Andrew is an absolutely top notch Front End Developer - an expert level of knowledge, very personable, and unnervingly *fast* as well - there are few people who can code so quickly, never mind to the standard that Andrew does.</p>
                     <cite>
                         &mdash; J. Robinson, Head of Front End Development<br>
@@ -62,19 +57,11 @@ permalink: /
                     </cite>
                 </blockquote>
 
-                <blockquote class="column__item recommendation">
+                <blockquote class="recommendation">
                     <p>[Andrew] single-handedly wrote the front-end code for Songkick 2.0--a daunting task which he handled with calm efficiency! He works quickly and effectively and has a keen eye for both user experience and visual design. I really enjoyed collaborating with Andrew as we talked through design issue</p>
                     <cite>
                         &mdash; M. You, Chief Product Officer and Cofounder<br>
                         <a href="http://songkick.com">songkick.com</a>
-                    </cite>
-                </blockquote>
-
-                <blockquote class="column__item recommendation">
-                    <p>PARALLAX? Really Andrew you're better than that</p>
-                    <cite>
-                        &mdash; D. Green, supportive friend and Lead UI Developer<br>
-                        <a href="http://asos.com">asos.com</a>
                     </cite>
                 </blockquote>
             </div>

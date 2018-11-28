@@ -21,40 +21,80 @@ $gutter: 20px;
 
 @import "pages/home";
 
-.intro {
+body {
+  scroll-snap-type: y proximity;
+}
+
+.panel {
   background-color: #eee;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
+  scroll-snap-align: start;
+
+  &__container {
+    margin: auto;
+    max-width: 800px;
+  }
 
   &__content {
-    margin: auto;
-    max-width: 700px;
-    padding: 20px;
-    padding-left: 300px;
+    padding-left: 180px;
   }
 }
 
 .logo {
-  animation: font-twitch 5s 2s infinite;
-  background: black;
-  color: #fff;
+  animation: font-twitch 5s 0s infinite;
+  border: 2px solid;
+  color: #000;
   display: flex;
   flex-wrap: wrap;
   height: 100px;
-  right: calc(50% + 250px);
-  padding: 30px;
+  padding: 14px;
   position: fixed;
   text-align: center;
   text-transform: uppercase;
-  top: calc(50% - 80px);
+  top: calc(50% - 64px);
   width: 100px;
   word-break: break-all;
 
   span {
     line-height: 33.333px;
     width: 33.333%;
+  }
+}
+
+
+@keyframes font-testing {
+  0% {
+    font-family: inherit;
+  }
+  10% {
+    font-family: Savoye LET;
+  }
+  20% {
+    font-family: Snell Roundhand;
+  }
+  30% {
+    font-family: Zapfino;
+  }
+  40% {
+    font-family: Didot;
+  }
+  50% {
+    font-family: Courier New, Courier, monospace;
+  }
+  60% {
+    font-family: Avenir;
+  }
+  70% {
+    font-family: American Typewriter;
+  }
+  80% {
+    font-family: Phosphate;
+  }
+  90% {
+    font-family: inherit;
   }
 }
 
@@ -82,7 +122,7 @@ $gutter: 20px;
   //   font-size: 1em;
   // }
   85% {
-    font-family: cursive;
+    font-family: Savoye LET, Snell Roundhand, Zapfino, cursive;
     // font-size: 2em;
   }
   // 89.9% {
