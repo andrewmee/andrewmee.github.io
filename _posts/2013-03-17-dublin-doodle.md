@@ -5,6 +5,8 @@ date: 2013-03-17 00:00
 topic: Case study
 layout: portfolio
 theme: portfolio
+# heroType: video
+# hero: https://player.vimeo.com/video/89295850?color=ffffff&title=0&byline=0&portrait=0&background=1#t=32s
 hero: /resources/images/dublin-doodle/irish-times.jpg
 clients:
     - name: Tourism Ireland

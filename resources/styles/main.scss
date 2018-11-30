@@ -26,11 +26,11 @@ body {
 }
 
 .panel {
-  background-color: #eee;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: center;
+  min-height: 100vh;
+  position: relative;
   scroll-snap-align: start;
 
   &__container {
@@ -57,6 +57,7 @@ body {
   top: calc(50% - 64px);
   width: 100px;
   word-break: break-all;
+  z-index: 1;
 
   span {
     line-height: 33.333px;
@@ -64,6 +65,24 @@ body {
   }
 }
 
+.activity {
+
+  a:hover + &__preview {
+    display: flex;
+  }
+
+  &__preview {
+    background-position: center;
+    background-size: contain;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
 
 @keyframes font-testing {
   0% {

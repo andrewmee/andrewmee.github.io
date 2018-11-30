@@ -24,10 +24,21 @@ permalink: /
         <div class="panel__container">
             <div class="panel__content">
                 <h2>Recent activity</h2>
-                <ol class="clean-list">
+                <ol class="clean-list activity">
                     {% for post in site.posts %}
                         <li>
-                            <a href="{{ post.url }}">{{ post.title }}</a>
+                            <a href="{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                            {% if post.hero %}
+                                {% if post.heroType == "video" %}
+                                    <span class="activity__preview">
+                                        <div style="background: black;padding:56.25% 0 0 0;position:relative;width: 100%;"><iframe src="{{ post.hero }}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                                    </span>
+                                {% else %}
+                                    <span class="activity__preview" style="background-image: url({{ post.hero }});"></span>
+                                {% endif %}
+                            {% endif %}
                             <time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date | date: '%d %B %Y' }}</time>
                         </li>
                     {% endfor %}
