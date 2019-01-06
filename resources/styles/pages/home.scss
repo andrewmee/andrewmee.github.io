@@ -1,29 +1,35 @@
-.colour-block {
-    background: #41c1f7;
-    color: #fff;
+.panel {
+    background-color: #f8f0f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
     position: relative;
+    scroll-snap-align: start;
 
-    .slider {
-        /*background: linear-gradient(to bottom, #41f7c0 0%,#41d2f7 100%) no-repeat;*/
-        background: linear-gradient(to bottom, #f7417c 0%, #f78d41 100%) no-repeat;
-        background-attachment: fixed;
-        height: 100%;
+    .logo {
+        animation: font-twitch 5s 5s infinite;
         position: absolute;
-        top: 0;
-        transform: rotate(180deg);
-        width: 100%;
+        top: $gutter;
     }
 
-    a {
-        background-color: rgba(0, 0, 0, 0.1);
-        color: inherit;
-        display: inline-block;
-        padding: 0 0.5em;
-        text-decoration: none;
+    &__container {
+      margin: auto;
+      max-width: 800px;
+      padding: $gutter;
+    }
+}
 
-        &:hover,
-        &:focus {
-            background-color: rgba(0, 0, 0, 0.3);
+@media screen and (min-width: $breakpoint-small) {
+    .panel {
+        .logo {
+            position: fixed;
+            top: calc(50% - 64px);
+        }
+
+        &__content {
+            padding-left: 180px;
         }
     }
 }
@@ -31,12 +37,29 @@
 .activity {
     background-color: transparent!important;
 
-    &__heading {
+    a:hover + &__preview {
+        display: flex;
+    }
+
+    &__preview {
+        background-position: center;
+        background-size: contain;
+        bottom: 0;
+        display: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
     }
 
     &__list {
         margin: 0 0 0 -1rem;
         width: 800px;
+
+        &:hover a {
+            color: #222;
+        }
 
         a {
             display: inline-block;
@@ -45,7 +68,7 @@
 
             &:hover {
                 background-color: white;//rgba(255, 255, 255, 0.7);
-                color: #000;
+                color: #ff00a1;
             }
         }
 

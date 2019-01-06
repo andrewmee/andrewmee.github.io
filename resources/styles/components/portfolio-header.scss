@@ -11,8 +11,9 @@
     }
 
     @media screen and (min-width: $breakpoint-medium) {
-        margin-left: auto;
-        margin-right: 0;
+        margin-left: calc(20% - 40px);
+        // margin-left: auto;
+        // margin-right: 0;
         padding: 40px;
         width: 50%;
     }

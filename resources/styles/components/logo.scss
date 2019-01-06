@@ -1,44 +1,61 @@
 .logo {
-}
-
-.logo__box {
-    fill: #222;
-
-    .theme--portfolio & {
-        fill: #fff;
+    border: 2px solid;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+    word-break: break-all;
+    z-index: 1;
+  
+    span {
+        line-height: 33.333px;
+        width: 33.333%;
+    }
+  
+    &:hover {
+        animation: font-twitch 5s 0s;
     }
 }
 
-.logo__text {
-    fill: none;
-}
-
-a:hover .logo__box {
-    fill: yellow;
-}
-
-header .logo {
-    height: 40px;
-    width: 40px;
-
-    @media screen and (min-width: $breakpoint-small) {
-        height: 60px;
-        width: 60px;
+header {
+    a {
+        text-decoration: none;
     }
 
-    @media screen and (min-width: $breakpoint-medium) {
-        height: 100px;
-        width: 100px;
-    }
-}
+    .logo {
+        background-color: #000;
+        border: 0;
+        color: #fff;
+        font-size: 1.2rem;
+        height: 50px;
+        padding: 10px;
+        width: 50px;
 
-.logo--impact {
-    display: inline;
-    width: 10vw;
+        span {
+            line-height: 16.667px;
+        }
 
-    @media screen and (min-width: $breakpoint-small) {
-        transform: rotate(-25deg);
-        transform-origin: 0 100%;
-        width: 25vw;
+        @media screen and (min-width: $breakpoint-small) {
+        //     height: 60px;
+            margin-left: auto;
+        //     width: 60px;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+            background-color: transparent;
+            border: 2px solid;
+            color: #000;
+            font-size: 1.7rem;
+            height: 100px;
+            width: 100px;
+
+            span {
+                line-height: 33.333px;
+            }
+        }
     }
 }

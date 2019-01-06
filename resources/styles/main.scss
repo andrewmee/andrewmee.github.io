@@ -22,142 +22,67 @@ $gutter: 20px;
 @import "pages/home";
 
 body {
-  scroll-snap-type: y proximity;
-}
-
-.panel {
-  background-color: #f8f0f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  position: relative;
-  scroll-snap-align: start;
-
-  .logo {
-    position: fixed;
-  }
-
-  &__container {
-    margin: auto;
-    max-width: 800px;
-  }
-
-  &__content {
-    padding-left: 180px;
-  }
-}
-
-.logo {
-  animation: font-twitch 5s 0s infinite;
-  border: 2px solid;
-  color: #000;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  padding: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  top: calc(50% - 64px);
-  width: 100px;
-  word-break: break-all;
-  z-index: 1;
-
-  span {
-    line-height: 33.333px;
-    width: 33.333%;
-  }
-}
-
-.activity {
-
-  a:hover + &__preview {
-    display: flex;
-  }
-
-  &__preview {
-    background-position: center;
-    background-size: contain;
-    bottom: 0;
-    display: none;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
+    scroll-snap-type: y proximity;
 }
 
 @keyframes font-testing {
-  0% {
-    font-family: inherit;
-  }
-  10% {
-    font-family: Savoye LET;
-  }
-  20% {
-    font-family: Snell Roundhand;
-  }
-  30% {
-    font-family: Zapfino;
-  }
-  40% {
-    font-family: Didot;
-  }
-  50% {
-    font-family: Courier New, Courier, monospace;
-  }
-  60% {
-    font-family: Avenir;
-  }
-  70% {
-    font-family: American Typewriter;
-  }
-  80% {
-    font-family: Phosphate;
-  }
-  90% {
-    font-family: inherit;
-  }
+    0% {
+        font-family: inherit;
+    }
+    10% {
+        font-family: Savoye LET;
+    }
+    20% {
+        font-family: Snell Roundhand;
+    }
+    30% {
+        font-family: Zapfino;
+    }
+    40% {
+        font-family: Didot;
+    }
+    50% {
+        font-family: Courier New, Courier, monospace;
+    }
+    60% {
+        font-family: Avenir;
+    }
+    70% {
+        font-family: American Typewriter;
+    }
+    80% {
+        font-family: Phosphate;
+    }
+    90% {
+        font-family: inherit;
+    }
 }
 
 @keyframes font-twitch {
-  0% {
-    font-family: inherit;
-    // background: red;
-  }
-  74% {
-    font-family: inherit;
-    font-style: normal;
-    // background: red;
-  }
-  75% {
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    // background: yellow;
-  }
-  80% {
-    font-family: Courier, monospace;
-    font-style: normal;
-    // background: green;
-  }
-  // 84.9% {
-  //   font-size: 1em;
-  // }
-  85% {
-    font-family: Savoye LET, Snell Roundhand, Zapfino, cursive;
-    // font-size: 2em;
-  }
-  // 89.9% {
-  //   font-size: 1em;
-  // }
-  90% {
-    font-family: webdings;
-  }
-  95% {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  100% {
-    font-family: inherit;
-  }
+    0% {
+        font-family: inherit;
+    }
+    1% {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+    6% {
+        font-family: Courier, monospace;
+        font-style: normal;
+    }
+    11% {
+        font-family: Savoye LET, Snell Roundhand, Zapfino, cursive;
+    }
+    16% {
+        font-family: webdings;
+    }
+    21% {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    26% {
+        font-family: inherit;
+    }
+    100% {
+        font-family: inherit;
+    }
 }

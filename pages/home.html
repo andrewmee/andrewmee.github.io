@@ -7,10 +7,7 @@ permalink: /
 <main role="main">
     <section class="panel">
         <div class="panel__container">
-            <div class="logo">
-                <span>A</span><span>n</span><span>d</span><span>r</span><span>e</span><span>w</span>
-                <span>M</span><span>e</span><span>e</span>
-            </div>
+            {% include logo.html classes="" %}
             <div class="panel__content">
                 <p>
                     Hello, I'm Andrew and I am a front-end web developer with 13 years experience.
@@ -33,9 +30,9 @@ permalink: /
                                 <time datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ post.date | date: '%d %B %Y' }}</time>
                             </a>
                             {% if post.hero %}
-                                {% if post.heroType == "video" %}
+                                {% if post.heroVideo %}
                                     <span class="activity__preview">
-                                        <div style="background: black;padding:56.25% 0 0 0;position:relative;width: 100%;"><iframe src="{{ post.hero }}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                                        <div style="background: black;padding:56.25% 0 0 0;position:relative;width: 100%;"><iframe src="{{ post.heroVideo }}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                                     </span>
                                 {% else %}
                                     <span class="activity__preview" style="background-image: url({{ post.hero }});"></span>
