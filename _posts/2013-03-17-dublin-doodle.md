@@ -32,7 +32,7 @@ How exactly? Using JavaScript and Canvas I created a drawing tool which allowed 
 
 Simultaneously, each stroke was faithfully recorded &mdash; both the properties of the pen used, and the coordinates along its length &mdash; so that the whole drawing process could be played back as an animation when viewing other entrants to the competition.
 
-Another script operated offline to recreat each winning doodle in high definition, and automatically saved each rendered frame to be plugged into the projectors on the day.  You can see more of the amazing creations below.
+Another script operated offline to recreate each winning doodle in high definition, and automatically saved each rendered frame to be plugged into the projectors on the day.  You can see more of the amazing creations below.
 </div>
 
 {% include video.html url="https://player.vimeo.com/video/89295850?color=ffffff&title=0&byline=0&portrait=0" %}
