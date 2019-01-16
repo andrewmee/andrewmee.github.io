@@ -1,61 +1,89 @@
 .logo {
-    border: 2px solid;
-    color: #000;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100px;
-    padding: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100px;
-    word-break: break-all;
-    z-index: 1;
+  border: 2px solid;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  padding: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+  word-break: break-all;
+  z-index: 1;
   
-    span {
-        line-height: 33.333px;
-        width: 33.333%;
-    }
+  span {
+    line-height: 33.333px;
+    width: 33.333%;
+  }
   
-    &:hover {
-        animation: font-twitch 5s 0s;
-    }
+  &:hover {
+    animation: font-twitch 5s 0s;
+  }
 }
 
 header {
-    a {
-        text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+    font-size: 0.8rem;
+    height: 50px;
+    padding: 8px;
+    width: 50px;
+
+    span {
+      line-height: 16.667px;
     }
 
-    .logo {
-        background-color: #000;
-        border: 0;
-        color: #fff;
-        font-size: 1.2rem;
-        height: 50px;
-        padding: 10px;
-        width: 50px;
-
-        span {
-            line-height: 16.667px;
-        }
-
-        @media screen and (min-width: $breakpoint-small) {
-        //     height: 60px;
-            margin-left: auto;
-        //     width: 60px;
-        }
-
-        @media screen and (min-width: $breakpoint-medium) {
-            background-color: transparent;
-            border: 2px solid;
-            color: #000;
-            font-size: 1.7rem;
-            height: 100px;
-            width: 100px;
-
-            span {
-                line-height: 33.333px;
-            }
-        }
+    @media screen and (min-width: $breakpoint-small) {
+      margin-left: auto;
     }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      background-color: transparent;
+      border: 2px solid;
+      color: #000;
+      font-size: 1.3rem;
+      height: 78px;
+      padding: 10px;
+      width: 78px;
+
+      span {
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+@keyframes font-twitch {
+  0% {
+    font-family: inherit;
+  }
+  1% {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+  }
+  6% {
+    font-family: Courier, monospace;
+    font-style: normal;
+  }
+  11% {
+    font-family: Savoye LET, Snell Roundhand, Zapfino, cursive;
+  }
+  16% {
+    font-family: webdings;
+  }
+  21% {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  26% {
+    font-family: inherit;
+  }
+  100% {
+    font-family: inherit;
+  }
 }

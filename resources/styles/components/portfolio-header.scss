@@ -1,48 +1,46 @@
 .portfolio-header {
-    background: #fff;
-    box-sizing: border-box;
-    margin-bottom: 4em;
-    margin-top: 35vw;
+  background: #fff;
+  box-sizing: border-box;
+  margin-bottom: 4em;
+  margin-top: 35vw;
 
-    @media screen and (min-width: $breakpoint-small) {
-        margin-left: calc(20% - #{$gutter});
-        margin-top: 15vw;
-        padding: $gutter;
-    }
+  @media screen and (min-width: $breakpoint-small) {
+    margin-left: calc(20% - #{$gutter});
+    margin-top: 15vw;
+    padding: $gutter;
+  }
 
-    @media screen and (min-width: $breakpoint-medium) {
-        margin-left: calc(20% - 40px);
-        // margin-left: auto;
-        // margin-right: 0;
-        padding: 40px;
-        width: 50%;
-    }
+  @media screen and (min-width: $breakpoint-medium) {
+    margin-left: calc(20% - 40px);
+    padding: 40px;
+    width: 50%;
+  }
 }
 
 .portfolio-header__info {
-    dt {
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1;
-        margin-top: 1em;
-    }
+  dt {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 1em;
+  }
 
-    dd {
-        display: inline;
-        margin-left: 0;
+  dd {
+    display: inline;
+    margin-left: 0;
 
-        & + dd:before {
-            content: "/ ";
-        }
+    & + dd:before {
+      content: "/ ";
     }
+  }
 }
 
 .portfolio-hero {
-    background: #D6D0D0;
-    left: 0;
-    min-height: 50vw;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+  background: #D6D0D0;
+  left: 0;
+  min-height: 50vw;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }

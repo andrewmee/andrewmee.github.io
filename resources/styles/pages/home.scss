@@ -1,102 +1,108 @@
+body {
+  scroll-snap-type: y proximity;
+}
+
 .panel {
-    background-color: #f8f0f5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
-    position: relative;
-    scroll-snap-align: start;
+  background-color: #f8f0f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start;
 
-    .logo {
-        animation: font-twitch 5s 5s infinite;
-        position: absolute;
-        top: $gutter;
-    }
+  .logo {
+    animation: font-twitch 5s 5s infinite;
+    margin: 0 auto 15vh;
+  }
 
-    &__container {
-      margin: auto;
-      max-width: 800px;
-      padding: $gutter;
-    }
+  &__container {
+    margin: auto;
+    max-width: 800px;
+    padding: $gutter;
+  }
 }
 
 @media screen and (min-width: $breakpoint-small) {
-    .panel {
-        .logo {
-            position: fixed;
-            top: calc(50% - 64px);
-        }
-
-        &__content {
-            padding-left: 180px;
-        }
+  .panel {
+    .logo {
+      position: fixed;
+      top: calc(50% - 64px);
     }
+
+    &__content {
+      padding-left: 180px;
+    }
+  }
 }
 
 .activity {
-    background-color: transparent!important;
+  background-color: transparent!important;
 
-    a:hover + &__preview {
-        display: flex;
+  a:hover + &__preview {
+    display: flex;
+  }
+
+  &__preview {
+    background-position: center;
+    background-size: contain;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__list {
+    margin: 0 0 0 -1rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      width: 800px;
     }
 
-    &__preview {
-        background-position: center;
-        background-size: contain;
-        bottom: 0;
-        display: none;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
+    &:hover a {
+      color: #222;
     }
 
-    &__list {
-        margin: 0 0 0 -1rem;
-        width: 800px;
+    a {
+      display: inline-block;
+      padding: 1rem;
+      text-decoration: none;
 
-        &:hover a {
-            color: #222;
-        }
-
-        a {
-            display: inline-block;
-            padding: 1rem;
-            text-decoration: none;
-
-            &:hover {
-                background-color: white;//rgba(255, 255, 255, 0.7);
-                color: #ff00a1;
-            }
-        }
-
-        h3 {
-            font-size: 2rem;
-            line-height: 1;
-            margin: 0;
-        }
-
-        time:before {
-            content: "— ";
-        }
+      &:hover {
+        background-color: white;
+        color: #ff00a1;
+      }
     }
+
+    h3 {
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0;
+    }
+
+    time:before {
+      content: "— ";
+    }
+  }
 }
 
 .recommendation {
-    font-size: 1.2rem;
-    margin: 0 0 2em;
+  font-size: 1.2rem;
+  margin: 0 0 2em;
 
-    p {
-        color: #777;
-        font-style: italic;
-        margin-top: 0;
-    }
+  p {
+    color: #777;
+    font-style: italic;
+    margin-top: 0;
+  }
 
-    cite {
-        display: block;
-        font-style: normal;
-        text-align: right;
-    }
+  cite {
+    display: block;
+    font-style: normal;
+    text-align: right;
+  }
 }
