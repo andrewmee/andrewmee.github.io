@@ -3,49 +3,49 @@
 /* General styles only - most grandular styling is set by the pygments file in vendor */
 
 .highlight {
-    margin: 0 0 0 -140px;
-    padding: 0 0 0 140px;
-    position: relative;
+  margin: 0 0 0 -140px;
+  padding: 0 0 0 140px;
+  position: relative;
 
 
-    ::selection {
-        background: #fff;
-    }
+  ::selection {
+    background: #fff;
+  }
 }
 
 .highlight pre code {
-    display: block;
-    overflow: auto;
-    padding: 20px;
+  display: block;
+  overflow: auto;
+  padding: 20px;
 }
 
 .highlight code::before {
-    background: #ff00a1;
-    color: #fff;
-    content: attr(data-lang);
-    display: block;
-    font-weight: bold;
-    text-align: right;
-    letter-spacing: -0.05em;
-    margin-left: -100px;
-    margin-top: -20px;
-    padding: 5px;
-    position: absolute;
-    height: 50px;
-    width: 50px;
+  background: #ff00a1;
+  color: #fff;
+  content: attr(data-lang);
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: -0.05em;
+  margin-left: -100px;
+  margin-top: -20px;
+  padding: 5px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
 }
 
 .highlighter-rouge {
-    background: #eee;
-    border-radius: 2px;
-    font-size: 0.9em;
-    padding: 0.2em 0.6em;
+  background: #eee;
+  border-radius: 2px;
+  font-size: 0.9em;
+  padding: 0.2em 0.6em;
 }
 
 /* Set code block intro colours based on type */
 
 /*
 code[data-lang=diff]::before {
-    background: #ea2a12;
+  background: #ea2a12;
 }
 */
