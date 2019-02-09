@@ -1,5 +1,14 @@
 .site-header {
   overflow: hidden;
+
+  &--overlay {
+    padding: 0;
+
+    .logo {
+      margin: $gutter;
+      position: absolute;
+    }
+  }
 }
 
 .post__date {

@@ -7,7 +7,6 @@
   padding: 0 0 0 140px;
   position: relative;
 
-
   ::selection {
     background: #fff;
   }
@@ -20,7 +19,7 @@
 }
 
 .highlight code::before {
-  background: #ff00a1;
+  background: $link-highlight;
   color: #fff;
   content: attr(data-lang);
   display: block;

@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -14,34 +22,9 @@ img {
 
 @media screen and (min-width: $breakpoint-small) {
 
-  .gutters {
-    margin-left: 20%;
-  }
-
-  .bleed-left,
-  .pull-left {
-    float: left;
-    margin-left: -25%;
-    padding-right: $gutter;
-  }
-  
-  .bleed-left {
-    margin-bottom: $gutter;
-    max-width: 80%;
-  }
-  
-  img.bleed-left {
-    max-width: 125%;
-  }
-
-  .pull-left {
-    box-sizing: border-box;
-    text-align: right;
-    width: 25%;
-  }
-
-  .gutter-left {
-    margin-left: 20%;
+  .gutters,
+  .gutter-right {
+    margin-right: $columns-3;
   }
 
 }
@@ -49,29 +32,21 @@ img {
 @media screen and (min-width: $breakpoint-medium) {
 
   .gutters {
-    margin-right: 20%;
-
-    .bleed-right {
-      margin-right: -33.33%;
-    }
-
-    .bleed-left,
-    .pull-left {
-      margin-left: -33.333%;
-    }
-
-    .bleed-left,
-    .bleed-right {
-      max-width: 133.33%;
-    }
+    margin-left: $columns-3;
 
     .pull-left {
-      width: 33.333%;
+      float: left;
+      // margin-left: -$columns-3;
+      margin-left: -30%;
+      padding-right: $gutter;
+      text-align: right;
+      // width: $columns-3;
+      width: 30%;
     }
   }
 
-  .gutter-right {
-    margin-right: 20%;
+  .gutter-left {
+    margin-left: $columns-3;
   }
 
   .column {
