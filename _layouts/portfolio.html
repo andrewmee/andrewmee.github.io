@@ -8,42 +8,53 @@ layout: default
     </a>
 </header>
 
-<article class="container">
-    <img class="portfolio-hero" src="{{ page.hero }}">
+<article>
     <header class="portfolio-header">
-        {{page.topic}}
-        <h1>{{ page.title }}</h1>
+        <img class="portfolio-header__hero" src="{{ page.hero }}">
+        
+        <div class="container">
+            <div class="portfolio-header__content">
+                {{page.topic}}
+                <h1>{{ page.title }}</h1>
 
-        <dl class="portfolio-header__info">
-            <dt>Client{% if page.clients.size > 0 %}s{% endif %}</dt>
-            {% for client in page.clients %}
-                <dd>
-                    {% if client.url %}
-                        <a href="{{ client.url }}">
-                            {{ client.name }}
-                        </a>
-                    {% else %}
+                <dl class="portfolio-header__info">
+                    <dt>Client{% if page.clients.size > 0 %}s{% endif %}</dt>
+                    {% for client in page.clients %}
+                    <dd>
+                        {% if client.url %}
+                        <a href="{{ client.url }}">{{ client.name }}</a>
+                        {% else %}
                         {{ client.name }}
-                    {% endif %}
-                </dd>
-            {% endfor %}
-
-            <dt>Type</dt>
-            {% for type in page.type %}
-                <dd>{{ type }}</dd>
-            {% endfor %}
-
-            <dt>Sector</dt>
-            {% for sector in page.sector %}
-                <dd>{{ sector }}</dd>
-            {% endfor %}
-
-            <dt>Date</dt>
-            <dd><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ page.date | date: '%d %B %Y' }}</time></dd>
-        </dl>
+                        {% endif %}
+                    </dd>
+                    {% endfor %}
+                </dl>
+                    
+                <dl class="portfolio-header__info">
+                    <dt>Type</dt>
+                    {% for type in page.type %}
+                    <dd>{{ type }}</dd>
+                    {% endfor %}
+                </dl>
+                    
+                <dl class="portfolio-header__info">
+                    <dt>Sector</dt>
+                    {% for sector in page.sector %}
+                    <dd>{{ sector }}</dd>
+                    {% endfor %}
+                </dl>
+                    
+                <dl class="portfolio-header__info">
+                    <dt>Date</dt>
+                    <dd><time datetime="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">{{ page.date | date: '%d %B %Y' }}</time></dd>
+                </dl>
+            </div>
+        </div>
     </header>
 
-    {{ content }}
+    <div class="container">
+        {{ content }}
+    </div>
 </article>
 
 {% include footer.html %}

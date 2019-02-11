@@ -1,46 +1,71 @@
 .portfolio-header {
-  background: #fff;
-  box-sizing: border-box;
-  margin-bottom: 4em;
-  margin-top: 35vw;
+  
+  h1 {
+    border-bottom: 2px solid;
+    margin-bottom: 0;
+  }
+
+  &__hero {
+    display: block;
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100%;
+  }
 
   @media screen and (min-width: $breakpoint-small) {
-    margin-left: calc(20% - #{$gutter});
-    margin-top: 15vw;
-    padding: $gutter;
   }
 
   @media screen and (min-width: $breakpoint-medium) {
-    margin-left: calc(20% - 40px);
-    padding: 40px;
-    width: 50%;
-  }
-}
+    color: #fff;
 
-.portfolio-header__info {
-  dt {
-    font-size: 1.5rem;
-    font-weight: bold;
+    .container {
+      padding: 0;
+      position: relative;
+    }
+
+    &__content {
+      bottom: 0;
+      left: $gutter;
+      position: absolute;
+      right: $gutter;
+    }
+
+    &__info {
+      float: left;
+      min-width: $columns-3;
+      max-width: $columns-4;
+      padding-right: $gutter;
+
+      a {
+        background-color: #fff;
+        color: #000;
+        mix-blend-mode: lighten;
+        padding: 0 0.2em;
+
+        &:hover {
+          color: $link-highlight;
+          mix-blend-mode: normal;
+        }
+      }
+    }
+  }
+
+  &__info {
     line-height: 1;
-    margin-top: 1em;
-  }
 
-  dd {
-    display: inline;
-    margin-left: 0;
-
-    & + dd:before {
-      content: "/ ";
+    dt {
+      margin-bottom: 0.4em;
+    }
+  
+    dd {
+      font-weight: 200;
+      display: inline;
+      margin-left: 0;
+  
+      & + dd:before {
+        content: "/ ";
+      }
     }
   }
 }
 
-.portfolio-hero {
-  background: #D6D0D0;
-  left: 0;
-  min-height: 50vw;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
