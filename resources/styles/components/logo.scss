@@ -3,11 +3,11 @@
   color: #000;
   display: flex;
   flex-wrap: wrap;
-  height: 100px;
+  height: 128px;
   padding: 14px;
   text-align: center;
   text-transform: uppercase;
-  width: 100px;
+  width: 128px;
   word-break: break-all;
   z-index: 1;
   
@@ -17,7 +17,7 @@
   }
   
   &:hover {
-    animation: font-twitch 5s 0s;
+    animation: font-twitch 2s 0s;
   }
 }
 
@@ -31,16 +31,12 @@ header {
     border: 0;
     color: #fff;
     font-size: 0.8rem;
-    height: 50px;
+    height: 66px;
     padding: 8px;
-    width: 50px;
+    width: 66px;
 
     span {
       line-height: 16.667px;
-    }
-
-    @media screen and (min-width: $breakpoint-small) {
-      margin-left: auto;
     }
 
     @media screen and (min-width: $breakpoint-medium) {
@@ -48,9 +44,10 @@ header {
       border: 2px solid;
       color: #000;
       font-size: 1.3rem;
-      height: 78px;
+      height: 98px;
+      margin-left: auto;
       padding: 10px;
-      width: 78px;
+      width: 98px;
 
       span {
         line-height: 26px;

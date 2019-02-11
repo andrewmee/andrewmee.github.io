@@ -84,12 +84,12 @@ figcaption {
 }
 
 a {
-  color: #ff00a1;
+  color: $link-highlight;
   text-decoration-skip: ink;
 
   &:hover,
   &:focus {
-    background: #ff00a1;
+    background: $link-highlight;
     color: #fff;
     text-decoration: none;
   }

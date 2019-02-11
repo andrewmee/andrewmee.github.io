@@ -1,5 +1,14 @@
 .site-header {
   overflow: hidden;
+
+  &--overlay {
+    padding: 0;
+
+    .logo {
+      margin: $gutter;
+      position: absolute;
+    }
+  }
 }
 
 .post__date {
@@ -32,6 +41,12 @@
   .post__topic {
     color: rgba(255, 0, 255, 0.1);
     text-shadow: 0.08em 0.0ex 0 #caf7ff;
+  }
+}
+
+.theme--portfolio {
+  .site-header .logo {
+    color: #fff;
   }
 }
 

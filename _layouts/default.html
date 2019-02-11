@@ -2,8 +2,13 @@
 <html lang="en-GB">
     <head>
         <meta charset="utf-8"/>
-
-        <title>{{ page.title }}</title>
+        {% if page.layout == 'portfolio' %}
+            <title>{{ page.title }} - {{ page.topic }} - Andrew Mee</title>
+        {% elsif page.layout == 'post' %}
+            <title>{{ page.title }} - Andrew Mee</title>
+        {% else %}
+            <title>{{ page.title }}</title>
+        {% endif %}
         <meta name="description" content="{{ page.description }}" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
