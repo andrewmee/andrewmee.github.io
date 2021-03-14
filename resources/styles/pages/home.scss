@@ -41,17 +41,25 @@ body {
 .activity {
   background-color: transparent!important;
 
+  @media screen and (min-width: $breakpoint-medium) {
+    .panel__content {
+      text-align: right;
+      width: 750px;
+    }
+  }
+
   a:hover + &__preview {
-    display: flex;
+    opacity: 1;
   }
 
   &__preview {
     background-position: center;
     background-size: contain;
     bottom: 0;
-    display: none;
     left: 0;
+    opacity: 0;
     position: absolute;
+    transition: opacity 0.2s;
     right: 0;
     top: 0;
     z-index: -1;
@@ -59,10 +67,6 @@ body {
 
   &__list {
     margin: 0 0 0 -1rem;
-
-    @media screen and (min-width: $breakpoint-medium) {
-      width: 800px;
-    }
 
     &:hover a {
       color: #222;
