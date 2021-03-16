@@ -102,4 +102,5 @@ This could be;
 
 Get creative!  Anything you're interested in testing I'm sure you'll be able to find a way to build into your partial test, and often in a way that would have been _impossible_ when asking someone to build it all from scratch.
 
+Got something to add?  <a href="https://twitter.com/andrewmee/status/1371732976799674371">Join the conversation</a>
 </div>
