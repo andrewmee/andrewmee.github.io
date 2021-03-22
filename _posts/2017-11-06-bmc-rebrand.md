@@ -1,6 +1,6 @@
 ---
 title: BMC rebrand
-description: 
+description: A complete redesign of the BioMed Central website tying in with an ongoing rebrand.
 date: 2017-11-06 00:00
 topic: Case study
 layout: portfolio

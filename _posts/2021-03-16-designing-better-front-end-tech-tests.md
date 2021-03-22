@@ -1,6 +1,6 @@
 ---
 title: Stop making candidates do massive tech tests
-description: How to design a better front-end technical recruitment process
+description: How to design a front-end technical recruitment process that works better for you and for your candidates.
 date: 2021-03-16 11:13
 layout: post
 theme: soft

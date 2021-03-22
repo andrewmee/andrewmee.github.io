@@ -1,6 +1,6 @@
 ---
 title: Automated accessibility testing with Travis CI
-description: Using Pa11y CI to make accessibility tests a key part of your Node.js application's development
+description: Using Pa11y CI to make accessibility tests a key part of your Node.js application's development.
 date: 2017-03-08 16:45
 layout: post
 theme: soft

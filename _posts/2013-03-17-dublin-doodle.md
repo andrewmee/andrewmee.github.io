@@ -1,6 +1,6 @@
 ---
 title: Dublin Doodle
-description: 
+description: An innovative mixed-media installation to celebrate St Patricks Day in Dublin and around the world.
 date: 2013-03-17 00:00
 topic: Case study
 layout: portfolio
